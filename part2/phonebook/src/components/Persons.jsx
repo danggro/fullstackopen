@@ -1,15 +1,14 @@
 import Person from './Person';
 
-const Persons = ({ filter, persons }) => {
-  return filter
+const Persons = ({ filter, persons, handleDelete }) => {
+  const filterPersons = !filter
     ? persons
-        .filter((person) =>
-          person.name.toLowerCase().includes(filter.toLowerCase()),
-        )
-        .map((person) => <Person key={person.name} person={person} />)
-    : persons.length > 0
-    ? persons.map((person) => <Person key={person.name} person={person} />)
-    : '...';
+    : persons.filter((person) =>
+        person.name.toLowerCase().includes(filter.toLowerCase()),
+      );
+  return filterPersons.map((person) => (
+    <Person key={person.id} person={person} handleDelete={handleDelete} />
+  ));
 };
 
 export default Persons;
