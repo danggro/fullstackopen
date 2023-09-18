@@ -1,0 +1,37 @@
+{
+  "notes": [
+    {
+      "content": "cstom hooks are awesome!",
+      "id": 1
+    },
+    {
+      "content": "best featyre ever <3",
+      "id": 2
+    },
+    {
+      "content": "sad",
+      "id": 3
+    },
+    {
+      "content": "123",
+      "id": 4
+    }
+  ],
+  "persons": [
+    {
+      "name": "mlukkai",
+      "number": "040-5483923",
+      "id": 1
+    },
+    {
+      "name": "hellas",
+      "number": "012.123123",
+      "id": 2
+    },
+    {
+      "name": "sad",
+      "number": "132",
+      "id": 3
+    }
+  ]
+}
