@@ -1,0 +1,61 @@
+POST http://localhost:3001/api/patients/d2773336-f723-11e9-8f0b-362b9e155667/entries
+Content-Type: application/json
+
+ {
+        "date": "2019-12-20",
+        "specialist": "MD House",
+        "type": "HealthCheck",
+        "description": "Slebew",
+        "diagnosisCodes": [],
+        "healthCheckRating": 2
+  }
+
+###
+POST http://localhost:3001/api/patients/d2773336-f723-11e9-8f0b-362b9e155667/entries
+Content-Type: application/json
+
+      {
+        "date": "2019-09-10",
+        "specialist": "MD House",
+        "type": "OccupationalHealthcare",
+        "description": "Prescriptions renewed.",
+        "diagnosisCodes": [],
+        "employerName": "FBI",
+        "sickLeave": {
+            "startDate": "",
+            "endDate": ""
+        }
+      }
+
+###
+POST http://localhost:3001/api/patients/d2773336-f723-11e9-8f0b-362b9e155667/entries
+Content-Type: application/json
+
+    {
+        "date": "2015-01-02",
+        "type": "Hospital",
+        "specialist": "MD House",
+        "diagnosisCodes": ["S62.5"],
+        "description":
+          "Healing time appr. 2 weeks. patient doesn't remember how he got the injury.",
+        "discharge": {
+          "date": "",
+          "criteria": ""
+        }
+    }
+
+###
+POST http://localhost:3001/api/patients/
+Content-Type: application/json
+
+ {
+  "name": "Anang",
+  "dateOfBirth": "2000-12-03",
+  "ssn": "112233",
+  "gender": "male",
+  "occupation": "Web Dev",
+  "entries": []
+  }
+
+###
+GET http://localhost:3001/api/patients/
